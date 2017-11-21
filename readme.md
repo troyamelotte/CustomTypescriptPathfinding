@@ -1,6 +1,6 @@
 ## Custom Typescript Pathfinding Algorithm
 
-I built this in around 5 hours o n a Monday Night. The goal was to test a pathfinding algorithm I had been thinking about for a while. This whole thing was done completely from scratch with no research into other pathfinding algorithms.
+I built this in around 5 hours on a Monday Night. The goal was to test a pathfinding algorithm I had been thinking about for a while. This whole thing was done completely from scratch with no research into other pathfinding algorithms.
 
 ### How it works:
 
