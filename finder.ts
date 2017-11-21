@@ -7,7 +7,7 @@ genWorld().then((newWorld)=>{
 })
 function getOptimalPath(){
 
-    let endValue = world[world.length-1][world[world.length-1].length-1].val;
+    let endValue:number;
     function diveIn(currentState:number[], currentNode:WorldNode){
         //Make shallow copy
         let newState = currentState.slice();
@@ -108,17 +108,20 @@ function getOptimalPath(){
     }
 
     queryUser("Where would you like to start?").then((answer)=>{
-        let x:number;
-        let y:number;
-        let target = parseInt(answer);
-        for(let i = 0; i<world.length; i++){
+        queryUser("Where would you like the end point to be?").then((endPoint)=>{
+            endValue = parseInt(endPoint);
+            let x:number;
+            let y:number;
+            let start = parseInt(answer);
+            for(let i = 0; i<world.length; i++){
 
-            for(let j = 0; j<world[i].length; j++){
-                if(target == world[i][j].val){
-                    console.log("The most optimal path is "+diveIn([], world[i][j]));
+                for(let j = 0; j<world[i].length; j++){
+                    if(start == world[i][j].val){
+                        console.log("The most optimal path is "+diveIn([], world[i][j]));
+                    }
                 }
             }
-        }
+        });
     })
     return;
 
