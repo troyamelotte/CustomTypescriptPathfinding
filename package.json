@@ -1,0 +1,15 @@
+{
+  "name": "troyspathfinding",
+  "version": "1.0.0",
+  "description": "Custom pathfinding algorithm",
+  "main": "finder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Troy Amelotte",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.53",
+    "typescript": "^2.6.1"
+  }
+}
